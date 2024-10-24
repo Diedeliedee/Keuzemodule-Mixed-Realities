@@ -109,10 +109,10 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.Hands
         }
 
         /// <summary>
-        /// Returns true if the given hand's index finger tip is farther from the wrist than the index intermediate joint.
+        /// Returns true if the given Hand's index finger tip is farther from the wrist than the index intermediate joint.
         /// </summary>
         /// <param name="hand">Hand to check for the required pose.</param>
-        /// <returns>True if the given hand's index finger tip is farther from the wrist than the index intermediate joint, false otherwise.</returns>
+        /// <returns>True if the given Hand's index finger tip is farther from the wrist than the index intermediate joint, false otherwise.</returns>
         static bool IsIndexExtended(XRHand hand)
         {
             if (!(hand.GetJoint(XRHandJointID.Wrist).TryGetPose(out var wristPose) &&
@@ -128,10 +128,10 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.Hands
         }
 
         /// <summary>
-        /// Returns true if the given hand's middle finger tip is closer to the wrist than the middle proximal joint.
+        /// Returns true if the given Hand's middle finger tip is closer to the wrist than the middle proximal joint.
         /// </summary>
         /// <param name="hand">Hand to check for the required pose.</param>
-        /// <returns>True if the given hand's middle finger tip is closer to the wrist than the middle proximal joint, false otherwise.</returns>
+        /// <returns>True if the given Hand's middle finger tip is closer to the wrist than the middle proximal joint, false otherwise.</returns>
         static bool IsMiddleGrabbing(XRHand hand)
         {
             if (!(hand.GetJoint(XRHandJointID.Wrist).TryGetPose(out var wristPose) &&
@@ -147,10 +147,10 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.Hands
         }
 
         /// <summary>
-        /// Returns true if the given hand's ring finger tip is closer to the wrist than the ring proximal joint.
+        /// Returns true if the given Hand's ring finger tip is closer to the wrist than the ring proximal joint.
         /// </summary>
         /// <param name="hand">Hand to check for the required pose.</param>
-        /// <returns>True if the given hand's ring finger tip is closer to the wrist than the ring proximal joint, false otherwise.</returns>
+        /// <returns>True if the given Hand's ring finger tip is closer to the wrist than the ring proximal joint, false otherwise.</returns>
         static bool IsRingGrabbing(XRHand hand)
         {
             if (!(hand.GetJoint(XRHandJointID.Wrist).TryGetPose(out var wristPose) &&
@@ -166,10 +166,10 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.Hands
         }
 
         /// <summary>
-        /// Returns true if the given hand's little finger tip is closer to the wrist than the little proximal joint.
+        /// Returns true if the given Hand's little finger tip is closer to the wrist than the little proximal joint.
         /// </summary>
         /// <param name="hand">Hand to check for the required pose.</param>
-        /// <returns>True if the given hand's little finger tip is closer to the wrist than the little proximal joint, false otherwise.</returns>
+        /// <returns>True if the given Hand's little finger tip is closer to the wrist than the little proximal joint, false otherwise.</returns>
         static bool IsLittleGrabbing(XRHand hand)
         {
             if (!(hand.GetJoint(XRHandJointID.Wrist).TryGetPose(out var wristPose) &&

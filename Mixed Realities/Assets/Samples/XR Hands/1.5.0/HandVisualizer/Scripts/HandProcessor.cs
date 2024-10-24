@@ -4,7 +4,7 @@ using UnityEngine.XR.Hands.Processing;
 namespace UnityEngine.XR.Hands.Samples.VisualizerSample
 {
     /// <summary>
-    /// Example hand processor that applies transformations on the root poses to
+    /// Example Hand processor that applies transformations on the root poses to
     /// modify the hands skeleton. Note it is possible to modify the bones
     /// directly for more advanced use cases that are not shown here.
     /// </summary>
@@ -24,7 +24,7 @@ namespace UnityEngine.XR.Hands.Samples.VisualizerSample
             None,
 
             /// <summary>
-            /// Smooths the hand root pose of the left and right hands with interpolated positions
+            /// Smooths the Hand root pose of the left and right hands with interpolated positions
             /// </summary>
             Smoothing,
 
@@ -34,7 +34,7 @@ namespace UnityEngine.XR.Hands.Samples.VisualizerSample
             Invert
         }
 
-        // Variables used for smoothing hand movements.
+        // Variables used for smoothing Hand movements.
         bool m_FirstFrame = false;
         Vector3 m_LastLeftHandPosition;
         Vector3 m_LastRightHandPosition;
@@ -82,7 +82,7 @@ namespace UnityEngine.XR.Hands.Samples.VisualizerSample
             m_LastProcessorExampleMode = m_ProcessorExampleMode;
         }
 
-        // Smooths the hand movements of an XRHandSubsystem by updating the root
+        // Smooths the Hand movements of an XRHandSubsystem by updating the root
         // pose of the left and right hands with interpolated positions.
         void SmoothHandsExample(XRHandSubsystem subsystem, XRHandSubsystem.UpdateSuccessFlags successFlags, XRHandSubsystem.UpdateType updateType, bool modeChanged)
         {

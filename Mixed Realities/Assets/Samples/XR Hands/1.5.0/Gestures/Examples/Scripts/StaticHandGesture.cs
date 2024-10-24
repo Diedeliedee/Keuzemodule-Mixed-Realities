@@ -5,7 +5,7 @@ using UnityEngine.XR.Hands.Gestures;
 namespace UnityEngine.XR.Hands.Samples.GestureSample
 {
     /// <summary>
-    /// A gesture that detects when a hand is held in a static shape and orientation for a minimum amount of time.
+    /// A gesture that detects when a Hand is held in a static shape and orientation for a minimum amount of time.
     /// </summary>
     public class StaticHandGesture : MonoBehaviour
     {
@@ -55,7 +55,7 @@ namespace UnityEngine.XR.Hands.Samples.GestureSample
         Color m_BackgroundHiglightColor = new Color(0f, 0.627451f, 1f);
 
         /// <summary>
-        /// The hand tracking events component to subscribe to receive updated joint data to be used for gesture detection.
+        /// The Hand tracking events component to subscribe to receive updated joint data to be used for gesture detection.
         /// </summary>
         public XRHandTrackingEvents handTrackingEvents
         {
@@ -64,7 +64,7 @@ namespace UnityEngine.XR.Hands.Samples.GestureSample
         }
 
         /// <summary>
-        /// The hand shape or pose that must be detected for the gesture to be performed.
+        /// The Hand shape or pose that must be detected for the gesture to be performed.
         /// </summary>
         public ScriptableObject handShapeOrPose
         {
@@ -73,7 +73,7 @@ namespace UnityEngine.XR.Hands.Samples.GestureSample
         }
 
         /// <summary>
-        /// The target Transform to user for target conditions in the hand shape or pose.
+        /// The target Transform to user for target conditions in the Hand shape or pose.
         /// </summary>
         public Transform targetTransform
         {
@@ -109,7 +109,7 @@ namespace UnityEngine.XR.Hands.Samples.GestureSample
         }
 
         /// <summary>
-        /// The minimum amount of time the hand must be held in the required shape and orientation for the gesture to be performed.
+        /// The minimum amount of time the Hand must be held in the required shape and orientation for the gesture to be performed.
         /// </summary>
         public float minimumHoldTime
         {

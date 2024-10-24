@@ -4,7 +4,7 @@ using UnityEngine.XR.Hands.Gestures;
 namespace UnityEngine.XR.Hands.Samples.Gestures.DebugTools
 {
     /// <summary>
-    /// Updates the text label that denotes the currently detected hand gesture
+    /// Updates the text label that denotes the currently detected Hand gesture
     /// </summary>
     [RequireComponent(typeof(TextMeshProUGUI))]
     public class XRSelectedHandShapeDebugUI : MonoBehaviour
@@ -19,7 +19,7 @@ namespace UnityEngine.XR.Hands.Samples.Gestures.DebugTools
         TextMeshProUGUI m_HandShapeNameLabel;
 
         /// <summary>
-        /// The text label that denotes and displays the currently detected hand gesture
+        /// The text label that denotes and displays the currently detected Hand gesture
         /// </summary>
         public TextMeshProUGUI handShapeNameLabel
         {
@@ -33,7 +33,7 @@ namespace UnityEngine.XR.Hands.Samples.Gestures.DebugTools
         }
 
         /// <summary>
-        /// Update the text label that denotes the currently detected hand gesture
+        /// Update the text label that denotes the currently detected Hand gesture
         /// </summary>
         /// <param name="handPoseOrShape">The pose or shape whose name will be displayed</param>
         public void UpdateSelectedHandshapeTextUI(ScriptableObject handPoseOrShape)
@@ -48,7 +48,7 @@ namespace UnityEngine.XR.Hands.Samples.Gestures.DebugTools
         }
 
         /// <summary>
-        /// Update the text label that denote that no hand gesture is currently detected
+        /// Update the text label that denote that no Hand gesture is currently detected
         /// </summary>
         public void ResetUI()
         {

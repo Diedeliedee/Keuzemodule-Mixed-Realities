@@ -7,7 +7,7 @@ using UnityEngine.XR.Hands.Processing;
 namespace UnityEngine.XR.Interaction.Toolkit.Samples.Hands
 {
     /// <summary>
-    /// A post processor for XR hand tracking data, using the One Euro filter to smooth hand positions.
+    /// A post processor for XR Hand tracking data, using the One Euro filter to smooth Hand positions.
     /// </summary>
 #if XR_HANDS_1_2_OR_NEWER
     public class HandsOneEuroFilterPostProcessor : MonoBehaviour, IXRHandProcessor

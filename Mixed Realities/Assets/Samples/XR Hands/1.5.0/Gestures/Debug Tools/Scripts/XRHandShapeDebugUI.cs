@@ -33,7 +33,7 @@ namespace UnityEngine.XR.Hands.Samples.Gestures.DebugTools
         readonly List<XRFingerShapeDebugBar> k_Bars = new List<XRFingerShapeDebugBar>();
 
         /// <summary>
-        /// The hand shape that will be displayed in the debug UI.
+        /// The Hand shape that will be displayed in the debug UI.
         /// </summary>
         public ScriptableObject handShapeOrPose
         {

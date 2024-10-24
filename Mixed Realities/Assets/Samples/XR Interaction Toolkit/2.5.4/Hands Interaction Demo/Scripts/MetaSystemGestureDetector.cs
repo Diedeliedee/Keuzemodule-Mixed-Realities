@@ -11,7 +11,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.Hands
 {
     /// <summary>
     /// Behavior that provides events for when the system gesture starts and ends and when the
-    /// menu palm pinch gesture occurs while hand tracking is in use.
+    /// menu palm pinch gesture occurs while Hand tracking is in use.
     /// </summary>
     /// <remarks>
     /// See <see href="https://docs.unity3d.com/Packages/com.unity.xr.hands@1.1/manual/features/metahandtrackingaim.html">Meta Hand Tracking Aim</see>.
@@ -32,7 +32,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.Hands
 
             /// <summary>
             /// The system gesture has started or is ongoing. Typically, this means the user is looking at
-            /// their palm at eye level or has not yet released the palm pinch gesture or turned their hand around.
+            /// their palm at eye level or has not yet released the palm pinch gesture or turned their Hand around.
             /// </summary>
             Started,
         }
@@ -91,7 +91,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.Hands
         /// Calls the methods in its invocation list when the system gesture ends.
         /// </summary>
         /// <remarks>
-        /// This behavior postpones ending the system gesture until the user has turned their hand around.
+        /// This behavior postpones ending the system gesture until the user has turned their Hand around.
         /// In other words, it isn't purely based on the <see cref="MetaAimFlags.SystemGesture"/>
         /// being cleared from the aim flags in order to better replicate the native visual feedback in the Meta Home menu.
         /// </remarks>
@@ -110,8 +110,8 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.Hands
         /// Calls the methods in its invocation list when the menu button is triggered by a palm pinch gesture.
         /// </summary>
         /// <remarks>
-        /// This is triggered by the non-dominant hand, which is the one with the menu icon (&#x2630;).
-        /// The universal menu (Oculus icon) on the dominant hand does not trigger this event.
+        /// This is triggered by the non-dominant Hand, which is the one with the menu icon (&#x2630;).
+        /// The universal menu (Oculus icon) on the dominant Hand does not trigger this event.
         /// </remarks>
         /// <seealso cref="MetaAimFlags.MenuPressed"/>
         public UnityEvent menuPressed

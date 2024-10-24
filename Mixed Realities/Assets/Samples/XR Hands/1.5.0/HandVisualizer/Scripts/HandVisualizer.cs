@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace UnityEngine.XR.Hands.Samples.VisualizerSample
 {
     /// <summary>
-    /// This component visualizes the hand joints and mesh for the left and right hands.
+    /// This component visualizes the Hand joints and mesh for the left and right hands.
     /// </summary>
     public class HandVisualizer : MonoBehaviour
     {
@@ -279,7 +279,7 @@ namespace UnityEngine.XR.Hands.Samples.VisualizerSample
         {
             // We have no game logic depending on the Transforms, so early out here
             // (add game logic before this return here, directly querying from
-            // subsystem.leftHand and subsystem.rightHand using GetJoint on each hand)
+            // subsystem.leftHand and subsystem.rightHand using GetJoint on each Hand)
             if (updateType == XRHandSubsystem.UpdateType.Dynamic)
                 return;
 
