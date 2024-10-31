@@ -13,17 +13,4 @@ public class WindBlast : Projectile
             rigidbody.AddForce(_force * direction, ForceMode.Impulse);
         }
     }
-
-    protected override void Tick()
-    {
-        base.Tick();
-
-        // This does not work as intended
-        //_Transform.localScale *= 1.01f;
-    }
-
-    protected override void Cleanup()
-    {
-        base.Cleanup();
-    }
 }

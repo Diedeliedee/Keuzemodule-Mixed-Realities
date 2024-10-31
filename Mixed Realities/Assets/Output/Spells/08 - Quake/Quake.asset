@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fac07e1cdf714704b96d1bf19413efd2, type: 3}
+  m_Name: Quake
+  m_EditorClassIdentifier: 
+  KeyCode: 264
+  _Prefab: {fileID: 119165766792884036, guid: eb0a90899c67cde45a4c912e1d6c35d4, type: 3}
+  _offset: {x: 0, y: 0, z: 0}
+  _spellRadius: 9
+  _innerRadius: 3
+  _middleRadius: 6
+  _innerDamage: 30
+  _middleDamage: 20
+  _outerDamage: 10

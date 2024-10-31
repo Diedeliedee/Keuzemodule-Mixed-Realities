@@ -19,12 +19,16 @@ public class SpellHandler : MonoBehaviour
 
     private void Update()
     {
+        float deltaTime = Time.deltaTime;
+
         foreach (SpellData spell in _spells)
         {
             if (Input.GetKeyDown(spell.KeyCode))
             {
                 spell.Cast(FirePoint);
             }
+
+            spell.Tick(deltaTime);
         }
     }
 }

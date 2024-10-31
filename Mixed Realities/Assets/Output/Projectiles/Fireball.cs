@@ -9,12 +9,7 @@ public class Fireball : Projectile
     {
         if (other.TryGetComponent(out Health health))
         {
-            health.TakeDamage(_damage); Cleanup();
+            health.TakeDamage(_damage);
         }
-    }
-
-    protected override void Cleanup()
-    {
-        base.Cleanup();
     }
 }
