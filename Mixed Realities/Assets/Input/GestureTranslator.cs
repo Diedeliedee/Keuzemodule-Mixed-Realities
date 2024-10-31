@@ -47,6 +47,7 @@ public class GestureTranslator : MonoBehaviour
 
     private void GestureTranslator_PoseUpdated(Pose pose)
     {
+        
         // This could be used for gesture refinement or hand orientation logic in the future
     }
 

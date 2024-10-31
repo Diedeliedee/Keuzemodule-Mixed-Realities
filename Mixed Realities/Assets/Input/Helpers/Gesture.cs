@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Gesture", menuName = "Gesture", order = 1)]
+[CreateAssetMenu(fileName = "New Gesture", menuName = "Scriptable Object/Gesture")]
 public class Gesture : ScriptableObject
 {
     [Header("GESTURE TYPE")]
