@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   KeyCode: 257
   _Prefab: {fileID: 753516436966818668, guid: fc911b9a23f2670489bb32aea22acf7f, type: 3}
-  _offset: {x: 0, y: 0, z: 20}
+  _offset: {x: 0, y: 0, z: 15}
