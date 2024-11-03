@@ -3,9 +3,10 @@
     [System.Flags]
     public enum FingerState
     {
-        Straight    = 0,
-        SlightBend  = 1,
-        HalfBend    = 2,
-        FullBend    = 4,
+        None        = 0,
+        Straight    = 1,
+        SlightBend  = 2,
+        HalfBend    = 4,
+        FullBend    = 8,
     }
 }

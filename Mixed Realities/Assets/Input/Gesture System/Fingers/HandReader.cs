@@ -11,15 +11,24 @@ namespace GestureSystem
         [SerializeField] private XRHandTrackingEvents m_events;
 
         //  Array containing the finger shapes.
-        private XRFingerShape[] m_shapes = new XRFingerShape[5];
+        private XRFingerShape[] m_shapes    = new XRFingerShape[FingerConditions.fingerCount];
+        private bool m_active               = false;
 
-        private void OnEnable()
+        private void Awake()
         {
+            m_events.trackingAcquired.AddListener(OnTrackingAcquired);
+            m_events.trackingLost.AddListener(OnTrackingLost);
+        }
+
+        private void OnTrackingAcquired()
+        {
+            m_active = true;
             m_events.jointsUpdated.AddListener(OnJointsUpdated);
         }
 
-        private void OnDisable()
+        private void OnTrackingLost()
         {
+            m_active = false;
             m_events.jointsUpdated.RemoveListener(OnJointsUpdated);
         }
 
@@ -39,17 +48,25 @@ namespace GestureSystem
         /// </summary>
         public bool TryGetCurlData(out float[] _curlData)
         {
-            _curlData = new float[5];
+            //  Create a new float.
+            _curlData = new float[FingerConditions.fingerCount];
+
+            //  If the hand is inactive, disregard the hand's curl data.
+            if (!m_active)
+            {
+                _curlData = null;
+                return false;
+            }
 
             for (int i = 0; i < m_shapes.Length; i++)
             {
                 /// If for some reason we can't get a finger, best to disregard the hand entirely.
-                /// Since it'll most likely return false if the hand is off-screen.
                 if (m_shapes[i].TryGetFullCurl(out float _curl))
                 {
                     _curlData = null;
                     return false;
                 }
+
                 _curlData[i] = _curl;
             }
 

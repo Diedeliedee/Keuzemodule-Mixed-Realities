@@ -3,6 +3,8 @@
     [System.Serializable]
     public class FingerConditions
     {
+        public const int fingerCount = 5;
+
         public FingerState m_thumb;
         public FingerState m_index;
         public FingerState m_middle;

@@ -9,8 +9,8 @@ namespace GestureSystem
         [SerializeField] private HandReader m_rightHandReader;
         [Space]
         [SerializeField] private Gesture m_testGesture;
-
-        private UnityEvent<GestureData> m_onConditionsMet;
+        [Space]
+        [SerializeField] private UnityEvent<GestureData> m_onConditionsMet;
 
         private void Update()
         {
