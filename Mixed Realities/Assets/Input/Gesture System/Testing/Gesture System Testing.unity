@@ -306,6 +306,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6902038455967746358, guid: cee700b3dc3569f4cbfadef96756971a,
         type: 3}
+      propertyPath: m_testGesture
+      value: 
+      objectReference: {fileID: 11400000, guid: f31800ae2bb5ad44c90b751975c8b938,
+        type: 2}
+    - target: {fileID: 6902038455967746358, guid: cee700b3dc3569f4cbfadef96756971a,
+        type: 3}
       propertyPath: m_onConditionsMet.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}

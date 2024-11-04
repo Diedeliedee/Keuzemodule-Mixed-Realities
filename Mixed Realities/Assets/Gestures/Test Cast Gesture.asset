@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a34b902d09df524899c7c29f55e8de2, type: 3}
-  m_Name: Test Cast
-  m_EditorClassIdentifier: 
+  m_Name: Test Cast Gesture
+  m_EditorClassIdentifier: Assembly-CSharp:GestureSystem:Gesture
   leftHand: {fileID: 11400000, guid: e0dc2f2a8bc31ac49a67530cfd4f8dc3, type: 2}
   rightHand: {fileID: 11400000, guid: e0dc2f2a8bc31ac49a67530cfd4f8dc3, type: 2}
   type: 0

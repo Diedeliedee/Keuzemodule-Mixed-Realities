@@ -4,7 +4,7 @@ using UnityEngine.XR.Hands.Gestures;
 
 namespace GestureSystem
 {
-    internal class HandReader : MonoBehaviour
+    public class FingerReader : MonoBehaviour
     {
         [Header("Properties:")]
         [Tooltip("The event handler from which hand the reader should get it's data from. This is very important for determining which hand this reader will track!")]

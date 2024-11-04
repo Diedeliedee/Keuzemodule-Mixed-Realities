@@ -3,7 +3,7 @@ using UnityEngine;
 namespace GestureSystem
 {
     [CreateAssetMenu(fileName = "New Gesture", menuName = "Gestures/Gesture")]
-    public class Gesture : ScriptableObject
+    public class GestureData : ScriptableObject
     {
         [Header("Conditions:")]
         public HandConditions leftHand  = null;
