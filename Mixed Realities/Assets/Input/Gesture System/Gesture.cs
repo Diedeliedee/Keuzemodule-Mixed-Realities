@@ -8,7 +8,14 @@ namespace GestureSystem
         [Header("Finger Conditions:")]
         public FingerConditions m_leftHandConditions    = default;
         public FingerConditions m_rightHandConditions   = default;
-        [Space]
-        public bool m_bothHands = false;
+
+        [Header("Other Properties:")]
+        public Type m_type = Type.PerHand;
+
+        public enum Type
+        {
+            PerHand,
+            BothHands
+        }
     }
 }

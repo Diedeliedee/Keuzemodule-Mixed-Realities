@@ -61,7 +61,7 @@ namespace GestureSystem
             for (int i = 0; i < m_shapes.Length; i++)
             {
                 /// If for some reason we can't get a finger, best to disregard the hand entirely.
-                if (m_shapes[i].TryGetFullCurl(out float _curl))
+                if (!m_shapes[i].TryGetFullCurl(out float _curl))
                 {
                     _curlData = null;
                     return false;

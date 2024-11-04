@@ -14,7 +14,7 @@ namespace GestureSystem
             for (int i = 0; i < _conditions.Length; i++)
             {
                 //  If there are no conditions for a finger, skip the iteration, as the finger does not matter.
-                if (_conditions[i].HasFlag(FingerState.None)) continue;
+                if (_conditions[i] == 0) continue;
 
                 //  If a condtion does not have the flag of the current finger state, the gesture is incorrect.
                 if (!_conditions[i].HasFlag(GetFingerStateFromCurl(_curlData[i]))) return false;
@@ -24,26 +24,22 @@ namespace GestureSystem
 
         private static bool CurlMatchesFingerState(FingerState _condition, float _curl)
         {
-            var curl = Math.Round((double)_curl);
-
             return _condition switch
             {
-                FingerState.Straight    => curl < qPoint,
-                FingerState.SlightBend  => curl >= qPoint   && curl < hPoint,
-                FingerState.HalfBend    => curl >= hPoint   && curl < lPoint,
-                FingerState.FullBend    => curl >= lPoint,
+                FingerState.Straight    => _curl < qPoint,
+                FingerState.SlightBend  => _curl >= qPoint  && _curl < hPoint,
+                FingerState.HalfBend    => _curl >= hPoint  && _curl < lPoint,
+                FingerState.FullBend    => _curl >= lPoint,
                 _                       => false,
             };
         }
 
         private static FingerState GetFingerStateFromCurl(float _curl)
         {
-            var curl = Math.Round((double)_curl);
-
-            if (curl < qPoint)                      return FingerState.Straight;
-            if (curl >= qPoint && curl < hPoint)    return FingerState.SlightBend;
-            if (curl >= hPoint && curl < lPoint)    return FingerState.HalfBend;
-            if (curl >= lPoint)                     return FingerState.FullBend;
+            if (_curl < qPoint)                     return FingerState.Straight;
+            if (_curl >= qPoint && _curl < hPoint)  return FingerState.SlightBend;
+            if (_curl >= hPoint && _curl < lPoint)  return FingerState.HalfBend;
+            if (_curl >= lPoint)                    return FingerState.FullBend;
 
             return FingerState.None;
         }

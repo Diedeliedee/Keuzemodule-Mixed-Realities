@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a34b902d09df524899c7c29f55e8de2, type: 3}
-  m_Name: Open Palm 1
+  m_Name: Open Palm
   m_EditorClassIdentifier: 
   m_leftHandConditions:
     m_thumb: 1
