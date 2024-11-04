@@ -8,6 +8,9 @@ namespace GestureSystem
         [Header("Reference:")]
         [SerializeField] private SingleHandGestureMonitor m_leftHand;
         [SerializeField] private SingleHandGestureMonitor m_rightHand;
+        [Space]
+        [SerializeField] private Transform m_origin;
+        [SerializeField] private Transform m_head;
 
         public bool MonitorForCasts(SpellData[] _spells, out CallbackPackage _package)
         {
@@ -21,13 +24,13 @@ namespace GestureSystem
                     {
                         if (m_leftHand.ConditionsMet(spell.gesture.leftHand))
                         {
-                            _package = new() { succeededSpell = spell, firePoint = m_leftHand.firePoint };
-                            return true;
+                                _package = AssemblePackage(spell, m_leftHand.firePoint);
+                                return true;
                         }
                         if (m_rightHand.ConditionsMet(spell.gesture.rightHand))
                         {
-                            _package = new() { succeededSpell = spell, firePoint = m_rightHand.firePoint };
-                            return true;
+                                _package = AssemblePackage(spell, m_rightHand.firePoint);
+                                return true;
                         }
                         break;
                     }
@@ -37,7 +40,7 @@ namespace GestureSystem
                         if (!m_leftHand.ConditionsMet(spell.gesture.leftHand)) break;
                         if (!m_rightHand.ConditionsMet(spell.gesture.rightHand)) break;
 
-                        _package = new() { succeededSpell = spell, firePoint = m_rightHand.firePoint };
+                        _package = AssemblePackage(spell, m_rightHand.firePoint);
                         return true;
                     }
                 }
@@ -47,10 +50,25 @@ namespace GestureSystem
             return false;
         }
 
+        private CallbackPackage AssemblePackage(SpellData _spell, Transform _firePoint)
+        {
+            return new()
+            {
+                succeededSpell  = _spell,
+                firePoint       = _firePoint,
+                m_userOrigin    = m_origin,
+                m_userHead      = m_head,
+            };
+        }
+
         public class CallbackPackage
         {
             public SpellData succeededSpell;
+
             public Transform firePoint;
+
+            public Transform m_userOrigin;
+            public Transform m_userHead;
         }
     }
 }
