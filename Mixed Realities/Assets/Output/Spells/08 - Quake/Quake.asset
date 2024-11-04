@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac07e1cdf714704b96d1bf19413efd2, type: 3}
   m_Name: Quake
   m_EditorClassIdentifier: 
-  KeyCode: 264
+  gesture: {fileID: 11400000, guid: ca2d6ea4c99e7504f945765f4caeb137, type: 2}
   _Prefab: {fileID: 119165766792884036, guid: eb0a90899c67cde45a4c912e1d6c35d4, type: 3}
-  _offset: {x: 0, y: 0, z: 0}
+  _offset: 0
+  m_raycastEndpoint: 1
   _spellRadius: 9
+  m_environmentMask:
+    serializedVersion: 2
+    m_Bits: 8
   _innerRadius: 3
   _middleRadius: 6
   _innerDamage: 30

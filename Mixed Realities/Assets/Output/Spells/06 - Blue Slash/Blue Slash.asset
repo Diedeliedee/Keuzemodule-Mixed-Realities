@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea0a6f269f4a9c48a33a16ea308d9ce, type: 3}
   m_Name: Blue Slash
   m_EditorClassIdentifier: 
-  KeyCode: 262
+  gesture: {fileID: 11400000, guid: 0b2a8a4d72c8e82459b5b68cab0b1256, type: 2}
   _Prefab: {fileID: 2929425121346758057, guid: a8a644f53e3e2d048b09748ce46c06a1, type: 3}
-  _offset: {x: 0, y: 0, z: 0}
+  _offset: 3
+  m_raycastEndpoint: 0
   _spellRadius: 2
+  m_environmentMask:
+    serializedVersion: 2
+    m_Bits: 0
   _damage: 30

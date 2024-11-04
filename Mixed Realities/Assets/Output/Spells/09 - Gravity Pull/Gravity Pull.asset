@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6e8d1688cc4c54f85b31c051e449e3, type: 3}
   m_Name: Gravity Pull
   m_EditorClassIdentifier: 
-  KeyCode: 265
+  gesture: {fileID: 11400000, guid: f3304cebc0bf7c94bb34465f47a0562b, type: 2}
   _Prefab: {fileID: -7018238795153121677, guid: b80caaa324de3504a8aa16320a8268ac,
     type: 3}
-  _offset: {x: 0, y: 0, z: 0}
-  _spellRange: 25
+  _offset: 3
+  _spellRadius: 3
+  _spellRange: Infinity
   pullStrength: 5

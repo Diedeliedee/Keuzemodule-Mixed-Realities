@@ -14,9 +14,12 @@ public class ProjectileData : SpellData
         _targetLayer = LayerMask.GetMask("DamageCollider");
     }
 
-    public override void Cast(Transform firePoint)
+    public override void Cast(SpellContextPackage _package)
     {
-        base.Cast(firePoint);
+        _package.direction  = _package.head.forward;
+        _package.rotation   = _package.head.rotation;
+
+        base.Cast(_package);
 
         _CurrentParticleSystem.GetComponent<Projectile>().Init(_targetLayer, _force);
     }

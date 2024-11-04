@@ -5,7 +5,8 @@ using UnityEngine.AI;
 public class CollisionData : SpellData
 {
     [Header("COLLISION DATA SPECIFIC")]
-    [SerializeField] private bool m_raycastEndpoint = false;
+    [SerializeField] private bool m_raycastEndpoint         = false;
+    [SerializeField] private LayerMask m_environmentMask    = default;
 
     private LayerMask _targetLayer;
 
@@ -16,24 +17,26 @@ public class CollisionData : SpellData
         _targetLayer = LayerMask.GetMask("DamageCollider");
     }
 
-    public override void Cast(Transform firePoint)
+    public override void Cast(SpellContextPackage _package)
     {
-        GameObject temporaryFirepoint;
-
-        if (m_raycastEndpoint &&
-            Physics.Raycast(firePoint.position, firePoint.forward, out RaycastHit info, Mathf.Infinity) &&
-            NavMesh.SamplePosition(info.point, out NavMeshHit hit, Mathf.Infinity, NavMesh.AllAreas))
+        if (m_raycastEndpoint)
         {
-            temporaryFirepoint = new GameObject("Temporary Firepoint");
-            temporaryFirepoint.transform.SetPositionAndRotation(hit.position, Quaternion.identity);
-
-            base.Cast(temporaryFirepoint.transform);
-            Destroy(temporaryFirepoint);
+            if (Physics.Raycast(_package.firePoint.position, _package.head.forward, out RaycastHit info, Mathf.Infinity, m_environmentMask) &&
+                NavMesh.SamplePosition(info.point, out NavMeshHit hit, Mathf.Infinity, NavMesh.AllAreas))
+            {
+                _package.position = hit.position;
+                _package.rotation = Quaternion.identity;
+                _package.direction = Vector3.zero;
+            }
+            else return;
         }
         else
         {
-            base.Cast(firePoint);
+            _package.rotation   = Quaternion.LookRotation(_package.head.forward);
+            _package.direction  = _package.head.forward;
         }
+
+        base.Cast(_package);
 
         ParticleCollision[] particleCollisions = _CurrentParticleSystem.GetComponentsInChildren<ParticleCollision>();
         foreach (var particleCollision in particleCollisions)

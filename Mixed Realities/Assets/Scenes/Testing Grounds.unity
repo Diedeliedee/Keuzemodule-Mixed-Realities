@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 16122895}
   - component: {fileID: 16122894}
   - component: {fileID: 16122893}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dummy Station (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,7 +403,7 @@ GameObject:
   - component: {fileID: 51271954}
   - component: {fileID: 51271953}
   - component: {fileID: 51271952}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -581,7 +581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 216910312}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pillars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -654,7 +654,7 @@ GameObject:
   - component: {fileID: 265925186}
   - component: {fileID: 265925185}
   - component: {fileID: 265925184}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dummy Station (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -759,7 +759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 310614131}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Holder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1265,7 +1265,7 @@ GameObject:
   - component: {fileID: 392310264}
   - component: {fileID: 392310263}
   - component: {fileID: 392310262}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: North
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1485,7 +1485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 490089077}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Holder (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1523,7 +1523,7 @@ GameObject:
   - component: {fileID: 497557692}
   - component: {fileID: 497557691}
   - component: {fileID: 497557690}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1717,7 +1717,7 @@ GameObject:
   - component: {fileID: 561490597}
   - component: {fileID: 561490596}
   - component: {fileID: 561490595}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: South
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1893,7 +1893,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 677244050}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8310,7 +8310,7 @@ GameObject:
   - component: {fileID: 869870253}
   - component: {fileID: 869870252}
   - component: {fileID: 869870251}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8448,7 +8448,7 @@ GameObject:
   - component: {fileID: 1086727361}
   - component: {fileID: 1086727360}
   - component: {fileID: 1086727359}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player Station
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8555,7 +8555,7 @@ GameObject:
   - component: {fileID: 1218332788}
   - component: {fileID: 1218332787}
   - component: {fileID: 1218332786}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8728,7 +8728,7 @@ GameObject:
   - component: {fileID: 1260296680}
   - component: {fileID: 1260296679}
   - component: {fileID: 1260296678}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dummy Station (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8833,7 +8833,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1265960103}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8865,7 +8865,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1308428317}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cubes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8946,7 +8946,7 @@ GameObject:
   - component: {fileID: 1359315691}
   - component: {fileID: 1359315690}
   - component: {fileID: 1359315689}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9052,7 +9052,7 @@ GameObject:
   - component: {fileID: 1377913547}
   - component: {fileID: 1377913546}
   - component: {fileID: 1377913545}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9157,7 +9157,7 @@ GameObject:
   - component: {fileID: 1422656199}
   - component: {fileID: 1422656198}
   - component: {fileID: 1422656197}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9262,7 +9262,7 @@ GameObject:
   - component: {fileID: 1467145361}
   - component: {fileID: 1467145360}
   - component: {fileID: 1467145359}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9367,7 +9367,7 @@ GameObject:
   - component: {fileID: 1672770825}
   - component: {fileID: 1672770824}
   - component: {fileID: 1672770823}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9546,7 +9546,7 @@ GameObject:
   - component: {fileID: 1805292366}
   - component: {fileID: 1805292365}
   - component: {fileID: 1805292364}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: East
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9651,7 +9651,7 @@ GameObject:
   - component: {fileID: 1808677446}
   - component: {fileID: 1808677445}
   - component: {fileID: 1808677444}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dummy Station (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9759,7 +9759,7 @@ GameObject:
   - component: {fileID: 1808769585}
   - component: {fileID: 1808769584}
   - component: {fileID: 1808769583}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: West
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11852,7 +11852,7 @@ GameObject:
   - component: {fileID: 2101137186}
   - component: {fileID: 2101137185}
   - component: {fileID: 2101137184}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11957,7 +11957,7 @@ GameObject:
   - component: {fileID: 2111725952}
   - component: {fileID: 2111725951}
   - component: {fileID: 2111725950}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12108,10 +12108,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4956004527140925034, guid: cee700b3dc3569f4cbfadef96756971a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 5477158488141844609, guid: cee700b3dc3569f4cbfadef96756971a,
         type: 3}
       propertyPath: m_Name
       value: Player XR Origin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7653721609772863357, guid: cee700b3dc3569f4cbfadef96756971a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12133,7 +12143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2146286735}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Geometry
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f14aea1175ae8641ae9f7040ccd5b50, type: 3}
-  m_Name: Fist Pump Down
+  m_Name: Hulk Smash Right
   m_EditorClassIdentifier: 
   m_fingers:
     thumb: 14
@@ -19,6 +19,6 @@ MonoBehaviour:
     ring: 8
     pinky: 8
   m_movement:
-    requiredMovement: {x: 0, y: -0.25, z: 0}
-    movementSpan: 0.1
-  m_orientation: 32
+    requiredMovement: {x: 0, y: -0.3, z: 0}
+    movementSpan: 1
+  m_orientation: 4

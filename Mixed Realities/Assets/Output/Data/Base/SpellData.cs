@@ -13,7 +13,7 @@ public abstract class SpellData : ScriptableObject
     protected float _DeltaTime;
 
     [Header("SETTINGS")]
-    [SerializeField] private Vector3 _offset;
+    [SerializeField] private float _offset;
     private float _timer;
 
     public virtual void Init()
@@ -21,13 +21,13 @@ public abstract class SpellData : ScriptableObject
         // No idea yet
     }
 
-    public virtual void Cast(Transform firePoint)
+    public virtual void Cast(SpellContextPackage _package)
     {
         if (_CurrentParticleSystem == null)
         {
-            _FinalPosition = firePoint.position + firePoint.TransformDirection(_offset);
-            _CurrentParticleSystem = Instantiate(_Prefab, _FinalPosition, Quaternion.LookRotation(firePoint.forward));
-            _timer = _CurrentParticleSystem.main.duration;
+            _FinalPosition          = _package.position + _package.direction * _offset;
+            _CurrentParticleSystem  = Instantiate(_Prefab, _FinalPosition, _package.rotation);
+            _timer                  = _CurrentParticleSystem.main.duration;
         }
     }
 

@@ -323,15 +323,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_leftHand: {fileID: 5159402119061066576}
   m_rightHand: {fileID: 4063970782190389196}
-  m_testGesture: {fileID: 11400000, guid: 0a44b4cce24e3014392cbe99823eeea2, type: 2}
-  m_testGameObject: {fileID: 2418536640197228827, guid: a6e87523e608fd841ac0d8c4c4bdb659,
-    type: 3}
-  m_onConditionsMet:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onConditionsNotMet:
-    m_PersistentCalls:
-      m_Calls: []
+  m_origin: {fileID: 1560779467051787548}
+  m_head: {fileID: 627252984575906061}
 --- !u!1 &8352883399856397526
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,12 +787,12 @@ PrefabInstance:
     - target: {fileID: 3915585318813165336, guid: 28c7ae95625962345a5caa6243e8e815,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.92387956
+      value: 0.7933534
       objectReference: {fileID: 0}
     - target: {fileID: 3915585318813165336, guid: 28c7ae95625962345a5caa6243e8e815,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.38268343
+      value: 0.60876137
       objectReference: {fileID: 0}
     - target: {fileID: 3915585318813165336, guid: 28c7ae95625962345a5caa6243e8e815,
         type: 3}
@@ -864,16 +857,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 3915585318813165336, guid: 28c7ae95625962345a5caa6243e8e815,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.92387956
-      objectReference: {fileID: 0}
-    - target: {fileID: 3915585318813165336, guid: 28c7ae95625962345a5caa6243e8e815,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.38268343
       objectReference: {fileID: 0}
     - target: {fileID: 3915585318813165336, guid: 28c7ae95625962345a5caa6243e8e815,
         type: 3}

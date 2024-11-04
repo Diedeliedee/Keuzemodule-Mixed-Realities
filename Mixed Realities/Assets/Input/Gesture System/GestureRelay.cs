@@ -16,7 +16,11 @@ namespace GestureSystem
         {
             foreach (var spell in _spells)
             {
-                if (spell.gesture == null) continue;
+                if (spell.gesture == null)
+                {
+                    Debug.LogWarning($"HOI. The gesture of {spell.name} has not been set!!!");
+                    continue;
+                }
 
                 switch (spell.gesture.type)
                 {
@@ -56,8 +60,8 @@ namespace GestureSystem
             {
                 succeededSpell  = _spell,
                 firePoint       = _firePoint,
-                m_userOrigin    = m_origin,
-                m_userHead      = m_head,
+                userOrigin    = m_origin,
+                userHead      = m_head,
             };
         }
 
@@ -67,8 +71,8 @@ namespace GestureSystem
 
             public Transform firePoint;
 
-            public Transform m_userOrigin;
-            public Transform m_userHead;
+            public Transform userOrigin;
+            public Transform userHead;
         }
     }
 }

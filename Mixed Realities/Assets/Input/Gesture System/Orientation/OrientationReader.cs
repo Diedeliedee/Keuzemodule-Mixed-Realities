@@ -9,7 +9,7 @@ namespace GestureSystem
 
         public Vector3 GetLocalOrientation()
         {
-            var shit =  m_reference.InverseTransformDirection(m_handOrigin.forward); return shit;
+            return m_reference.InverseTransformDirection(m_handOrigin.forward);
         }
     }
 }

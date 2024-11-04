@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a34b902d09df524899c7c29f55e8de2, type: 3}
-  m_Name: Fireball Gesture
+  m_Name: Blue Slash Gesture
   m_EditorClassIdentifier: Assembly-CSharp:GestureSystem:Gesture
-  leftHand: {fileID: 11400000, guid: ad464e0c5c6f11646bb2f65d514603d6, type: 2}
-  rightHand: {fileID: 11400000, guid: ad464e0c5c6f11646bb2f65d514603d6, type: 2}
+  leftHand: {fileID: 11400000, guid: 54cb1f7b76701b74d832ea32ba414f2c, type: 2}
+  rightHand: {fileID: 11400000, guid: e3fc5da5f7d7aff489a34d4198921bac, type: 2}
   type: 0

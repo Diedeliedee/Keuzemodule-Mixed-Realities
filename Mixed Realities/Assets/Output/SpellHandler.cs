@@ -27,7 +27,18 @@ public class SpellHandler : MonoBehaviour
         {
             if (m_relay.MonitorForCasts(_spells.ToArray(), out GestureRelay.CallbackPackage _package))
             {
-                _package.succeededSpell.Cast(_package.firePoint);
+                var spellPackage = new SpellContextPackage()
+                {
+                    firePoint   = _package.firePoint,
+                    origin      = _package.userOrigin,
+                    head        = _package.userHead,
+
+                    position    = _package.firePoint.position,
+                    rotation    = _package.firePoint.rotation,
+                    direction   = _package.firePoint.forward
+                };
+
+                _package.succeededSpell.Cast(spellPackage);
             }
 
             spell.Tick(deltaTime);

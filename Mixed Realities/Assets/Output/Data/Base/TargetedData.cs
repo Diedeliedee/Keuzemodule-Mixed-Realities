@@ -3,6 +3,7 @@ using UnityEngine;
 public abstract class TargetedData : SpellData
 {
     [Header("TARGETED SETTINGS")]
+    [SerializeField] private float _spellRadius = 3;
     [SerializeField] private float _spellRange = 10;
     private LayerMask _targetLayer;
 
@@ -13,13 +14,17 @@ public abstract class TargetedData : SpellData
         _targetLayer = LayerMask.GetMask("DamageCollider");
     }
 
-    public override void Cast(Transform firePoint)
+    public override void Cast(SpellContextPackage _package)
     {
-        base.Cast(firePoint);
+        _package.position   = _package.head.position;
+        _package.rotation   = Quaternion.LookRotation(_package.head.forward);
+        _package.direction  = _package.head.forward;
 
-        if (Physics.Raycast(firePoint.position, firePoint.forward, out RaycastHit hit, _spellRange, _targetLayer))
+        base.Cast(_package);
+
+        if (Physics.SphereCast(_package.position, _spellRadius, _package.direction, out RaycastHit hit, _spellRange, _targetLayer))
         {
-            HandleEffect(hit.collider, firePoint);
+            HandleEffect(hit.collider, _package.firePoint);
         }
     }
 

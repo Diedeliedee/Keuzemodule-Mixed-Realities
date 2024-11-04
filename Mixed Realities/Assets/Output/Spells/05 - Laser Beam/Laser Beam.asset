@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 125a72767634f424ebcc2a4430acf6a2, type: 3}
   m_Name: Laser Beam
   m_EditorClassIdentifier: 
-  KeyCode: 261
+  gesture: {fileID: 11400000, guid: ec9157ce928d286479bac0a30b4c2211, type: 2}
   _Prefab: {fileID: 1729862752360036071, guid: 70bc8bb2d71f27740903e54057e8e93d, type: 3}
-  _offset: {x: 0, y: -1, z: 20}
+  _offset: 0
+  m_raycastEndpoint: 1
   _spellRadius: 10
+  m_environmentMask:
+    serializedVersion: 2
+    m_Bits: 8
   _innerRadius: 1
   _innerDamage: 50
   _outerDamage: 25
