@@ -6,7 +6,7 @@ namespace GestureSystem
     public class GestureRelay : MonoBehaviour
     {
         [SerializeField] private HandReader m_rightHandReader;
-        [SerializeField] private VelocityReader m_rightVelocityReader;
+        [SerializeField] private MovementReader m_rightVelocityReader;
         [Space]
         [SerializeField] private Gesture m_testGesture;
         [Space]

@@ -7,7 +7,7 @@ namespace GestureSystem
     /// As earlier described, this method allows the user to "flick" their spell, which is undesired.
     /// But for testing purposes it shall have to do.
     /// </summary>
-    public class VelocityReader : MonoBehaviour
+    public class MovementReader : MonoBehaviour
     {
         [SerializeField] private Transform m_handOrigin;
         [SerializeField] private Transform m_directionReference;
