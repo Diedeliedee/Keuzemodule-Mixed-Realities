@@ -7,6 +7,7 @@ namespace GestureSystem
     {
         [SerializeField] private HandReader m_rightHandReader;
         [SerializeField] private MovementReader m_rightVelocityReader;
+        [SerializeField] private OrientationReader m_rightOrientationReader;
         [Space]
         [SerializeField] private Gesture m_testGesture;
         [Space]
@@ -28,6 +29,11 @@ namespace GestureSystem
             }
             if (!MovementComparer.MatchesVelocity(m_testGesture.rightHand.movement.velocity, m_rightVelocityReader.orientalVelocity))
             {
+                return;
+            }
+            if (!OrientationComparer.MatchesDirection(m_testGesture.rightHand.orientation, m_rightOrientationReader.GetLocalOrientation()))
+            {
+                m_onConditionsNotMet.Invoke();
                 return;
             }
 

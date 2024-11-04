@@ -21,3 +21,4 @@ MonoBehaviour:
   m_movement:
     requiredMovement: {x: 0, y: 0, z: 0.3}
     movementSpan: 0.2
+  m_orientation: 1
