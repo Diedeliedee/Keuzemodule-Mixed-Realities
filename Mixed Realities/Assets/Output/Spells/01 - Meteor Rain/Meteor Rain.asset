@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 246c8fa1a786e3a43b377f9d472e7310, type: 3}
   m_Name: Meteor Rain
   m_EditorClassIdentifier: 
-  KeyCode: 257
+  gesture: {fileID: 11400000, guid: 1d8709185d54c62418e1383a67756faa, type: 2}
   _Prefab: {fileID: 753516436966818668, guid: fc911b9a23f2670489bb32aea22acf7f, type: 3}
   _offset: {x: 0, y: 0, z: 15}
+  m_raycastEndpoint: 1

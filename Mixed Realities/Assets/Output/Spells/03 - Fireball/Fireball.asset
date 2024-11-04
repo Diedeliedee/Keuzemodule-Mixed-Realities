@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a514ffc8693125745b3f7871aaf81457, type: 3}
   m_Name: Fireball
   m_EditorClassIdentifier: 
-  KeyCode: 259
+  gesture: {fileID: 11400000, guid: f31800ae2bb5ad44c90b751975c8b938, type: 2}
   _Prefab: {fileID: -8238471854872467692, guid: 4168bc7212c51334a8c1762d77c92d35,
     type: 3}
-  _offset: {x: 0, y: 0, z: 0}
+  _offset: {x: 0, y: 0, z: 1}
   _force: 10

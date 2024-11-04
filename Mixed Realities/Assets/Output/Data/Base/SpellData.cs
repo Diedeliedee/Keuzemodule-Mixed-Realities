@@ -1,9 +1,10 @@
+using GestureSystem;
 using UnityEngine;
 
 public abstract class SpellData : ScriptableObject
 {  
     [Header("CONDITION")]
-    public KeyCode KeyCode;
+    public GestureData gesture;
 
     [Header("PREFAB")]
     [SerializeField] protected ParticleSystem _Prefab;
@@ -24,8 +25,8 @@ public abstract class SpellData : ScriptableObject
     {
         if (_CurrentParticleSystem == null)
         {
-            _FinalPosition = firePoint.localPosition + _offset;
-            _CurrentParticleSystem = Instantiate(_Prefab, _FinalPosition, Quaternion.identity);
+            _FinalPosition = firePoint.position + firePoint.TransformDirection(_offset);
+            _CurrentParticleSystem = Instantiate(_Prefab, _FinalPosition, Quaternion.LookRotation(firePoint.forward));
             _timer = _CurrentParticleSystem.main.duration;
         }
     }

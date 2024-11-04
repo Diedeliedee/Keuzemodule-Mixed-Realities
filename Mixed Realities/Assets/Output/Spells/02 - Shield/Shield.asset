@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ca4ff6a99186cc469f19fcdc35095fd, type: 3}
   m_Name: Shield
   m_EditorClassIdentifier: 
-  KeyCode: 258
+  gesture: {fileID: 11400000, guid: 96fc5764f4830444bb640e181cdc0e6a, type: 2}
   _Prefab: {fileID: 2955197092750843386, guid: ea14075089d902642ab032212ac25028, type: 3}
-  _offset: {x: 0, y: -0.5, z: -5}
+  _offset: {x: 0, y: -0.7, z: -0.25}

@@ -1,3 +1,4 @@
+using GestureSystem;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,8 +7,7 @@ public class SpellHandler : MonoBehaviour
     [Header("SPELL SELECTION")]
     [SerializeField] private List<SpellData> _spells = new();
 
-    // Delete later, hands will be firepoint
-    public Transform FirePoint;
+    private GestureRelay m_relay = null;
 
     private void Awake()
     {
@@ -15,6 +15,8 @@ public class SpellHandler : MonoBehaviour
         {
             spell.Init();
         }
+
+        m_relay = FindObjectOfType<GestureRelay>();
     }
 
     private void Update()
@@ -23,9 +25,9 @@ public class SpellHandler : MonoBehaviour
 
         foreach (SpellData spell in _spells)
         {
-            if (Input.GetKeyDown(spell.KeyCode))
+            if (m_relay.MonitorForCasts(_spells.ToArray(), out GestureRelay.CallbackPackage _package))
             {
-                spell.Cast(FirePoint);
+                _package.succeededSpell.Cast(_package.firePoint);
             }
 
             spell.Tick(deltaTime);

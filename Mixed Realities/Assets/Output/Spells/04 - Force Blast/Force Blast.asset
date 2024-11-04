@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a514ffc8693125745b3f7871aaf81457, type: 3}
   m_Name: Force Blast
   m_EditorClassIdentifier: 
-  KeyCode: 260
+  gesture: {fileID: 11400000, guid: 26565b40c5791cd41b251eedf87aefbe, type: 2}
   _Prefab: {fileID: 4045593446719935140, guid: 7121a03a8993a64439626b953d1c9569, type: 3}
-  _offset: {x: 0, y: 0, z: 0}
-  _force: 10
+  _offset: {x: 0, y: 0, z: 1}
+  _force: 0.5
