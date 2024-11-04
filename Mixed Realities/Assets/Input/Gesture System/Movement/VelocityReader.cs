@@ -34,6 +34,9 @@ namespace GestureSystem
             m_currentPosition   = m_handOrigin.position;
             m_velocity          = (m_currentPosition - m_previousPosition) / Time.deltaTime;
             m_orientalVelocity  = m_directionReference.InverseTransformDirection(m_velocity);
+
+            //  Saving the previous position for next frame.
+            m_previousPosition = m_currentPosition;
         }
 
         private void OnDrawGizmosSelected()
