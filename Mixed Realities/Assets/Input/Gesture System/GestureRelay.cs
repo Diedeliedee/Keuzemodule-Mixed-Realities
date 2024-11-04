@@ -5,8 +5,8 @@ namespace GestureSystem
 {
     public class GestureRelay : MonoBehaviour
     {
-        [SerializeField] private HandReader m_leftHandReader;
         [SerializeField] private HandReader m_rightHandReader;
+        [SerializeField] private VelocityReader m_rightVelocityReader;
         [Space]
         [SerializeField] private Gesture m_testGesture;
         [Space]
@@ -21,9 +21,13 @@ namespace GestureSystem
                 m_onConditionsNotMet.Invoke();
                 return;
             }
-            if (!FingerComparer.FingersMatch(m_testGesture.m_rightHandConditions.m_states, _curlData))
+            if (!FingerComparer.FingersMatch(m_testGesture.rightHand.fingers.states, _curlData))
             {
                 m_onConditionsNotMet.Invoke();
+                return;
+            }
+            if (!MovementComparer.MatchesVelocity(m_testGesture.rightHand.movement.velocity, m_rightVelocityReader.orientalVelocity))
+            {
                 return;
             }
 
