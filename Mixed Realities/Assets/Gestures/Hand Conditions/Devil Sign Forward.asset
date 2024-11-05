@@ -15,7 +15,7 @@ MonoBehaviour:
   m_fingers:
     thumb: 14
     index: 1
-    middle: 9
+    middle: 8
     ring: 8
     pinky: 3
   m_movement:
