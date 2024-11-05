@@ -9,6 +9,7 @@ namespace GestureSystem
         private FingerReader m_fingerReader             = null;
         private MovementReader m_movementReader         = null;
         private OrientationReader m_orientationReader   = null;
+        private SpellFeedbackHandler m_feedback         = null;
 
         public Transform firePoint => m_firePoint;
 
@@ -17,6 +18,8 @@ namespace GestureSystem
             m_fingerReader      = GetComponent<FingerReader>();
             m_movementReader    = GetComponent<MovementReader>();
             m_orientationReader = GetComponent<OrientationReader>();
+
+            m_feedback = GetComponentInChildren<SpellFeedbackHandler>();
         }
 
         public bool ConditionsMet(HandConditions _conditions)
@@ -49,6 +52,7 @@ namespace GestureSystem
                 return false;
             }
 
+            m_feedback.ProvideFeedback();
             return true;
         }
     }
