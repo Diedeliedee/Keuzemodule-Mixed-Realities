@@ -19,6 +19,6 @@ MonoBehaviour:
     ring: 8
     pinky: 3
   m_movement:
-    requiredMovement: {x: 0, y: 0, z: 0.3}
-    movementSpan: 1
+    requiredMovement: {x: 0, y: 0, z: 0.2}
+    movementSpan: 0.3
   m_orientation: 1
