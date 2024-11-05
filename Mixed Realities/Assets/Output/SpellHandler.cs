@@ -1,5 +1,5 @@
-using GestureSystem;
 using System.Collections.Generic;
+using GestureSystem;
 using UnityEngine;
 
 public class SpellHandler : MonoBehaviour

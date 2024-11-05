@@ -21,6 +21,6 @@ public class ProjectileData : SpellData
 
         base.Cast(_package);
 
-        _CurrentParticleSystem.GetComponent<Projectile>().Init(_targetLayer, _force);
+        _CurrentParticleSystem.GetComponent<Projectile>().Init(this, _targetLayer, _force);
     }
 }
