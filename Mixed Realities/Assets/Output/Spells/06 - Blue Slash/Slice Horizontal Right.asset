@@ -20,5 +20,5 @@ MonoBehaviour:
     pinky: 8
   m_movement:
     requiredMovement: {x: 0.2, y: 0, z: 0}
-    movementSpan: 0.5
+    movementSpan: 0.3
   m_orientation: 48

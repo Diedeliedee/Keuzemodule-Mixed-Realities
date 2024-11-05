@@ -21,5 +21,10 @@ namespace GestureSystem
             m_particles.Emit(m_particleAmount);
             m_audio.PlayOneShot(m_audioClip);
         }
+
+        public void TickCooldown()
+        {
+            m_particles.Emit(1);
+        }
     }
 }

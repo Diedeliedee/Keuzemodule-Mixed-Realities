@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a34b902d09df524899c7c29f55e8de2, type: 3}
   m_Name: Fireball Gesture
   m_EditorClassIdentifier: Assembly-CSharp:GestureSystem:Gesture
-  leftHand: {fileID: 11400000, guid: ad464e0c5c6f11646bb2f65d514603d6, type: 2}
-  rightHand: {fileID: 11400000, guid: ad464e0c5c6f11646bb2f65d514603d6, type: 2}
+  leftHand: {fileID: 11400000, guid: 4c7545e0db6abb947a24af38a60bf2e3, type: 2}
+  rightHand: {fileID: 11400000, guid: 4c7545e0db6abb947a24af38a60bf2e3, type: 2}
   type: 0
