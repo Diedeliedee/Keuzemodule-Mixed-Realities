@@ -44,7 +44,7 @@ public abstract class SpellData : ScriptableObject
         }
     }
 
-    protected virtual void Cleanup()
+    public virtual void Cleanup()
     {
         Destroy(_CurrentParticleSystem.gameObject);
         _CurrentParticleSystem = null;

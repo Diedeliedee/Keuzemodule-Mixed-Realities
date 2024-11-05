@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class Projectile : MonoBehaviour
 {
     protected Transform _Transform;
+    protected SpellData _SpellData;
 
     private Rigidbody _rigidbody;
     private Collider _collider;
@@ -18,9 +19,10 @@ public abstract class Projectile : MonoBehaviour
         }
     }
 
-    public void Init(LayerMask targetLayer, float force)
+    public void Init(SpellData spellData, LayerMask targetLayer, float force)
     {
         _Transform = transform;
+        _SpellData = spellData;
         _targetLayer = targetLayer;
 
         _rigidbody = GetComponent<Rigidbody>();

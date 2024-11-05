@@ -14,7 +14,7 @@ public class Shield : SpellData
         // Set health.Invincible to true
     }
 
-    protected override void Cleanup()
+    public override void Cleanup()
     {
         // Set health.Invincible to false
 
