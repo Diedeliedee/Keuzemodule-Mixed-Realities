@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gesture: {fileID: 11400000, guid: 386e95ba1ceee6949900add5d0ce0fa8, type: 2}
   _Prefab: {fileID: 5826632143261002119, guid: 1fad5961288015541b407c5302ec2a1a, type: 3}
-  _offset: 1
+  _offset: 2
   m_raycastEndpoint: 0
   m_environmentMask:
     serializedVersion: 2

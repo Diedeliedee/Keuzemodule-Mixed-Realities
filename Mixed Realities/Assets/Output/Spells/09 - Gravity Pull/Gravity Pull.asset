@@ -18,4 +18,4 @@ MonoBehaviour:
   _offset: 3
   _spellRadius: 3
   _spellRange: Infinity
-  pullStrength: 5
+  pullStrength: 50

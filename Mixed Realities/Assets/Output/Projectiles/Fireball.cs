@@ -15,7 +15,7 @@ public class Fireball : Projectile
             health.TakeDamage(_damage);
         }
 
-        Explosion explosion = Instantiate(_explosionPrefab);
+        Explosion explosion = Instantiate(_explosionPrefab, _Transform.position, Quaternion.identity);
         explosion.Init();
         _SpellData.Cleanup();
     }
